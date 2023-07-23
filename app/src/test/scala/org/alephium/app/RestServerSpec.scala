@@ -1375,7 +1375,9 @@ trait RestServerFixture
         storages,
         cliqueManagerOpt = Some(cliqueManager),
         misbehaviorManagerOpt = Some(misbehaviorManager)
-      )(serverConfig)
+      )(
+        serverConfig
+      )
 
       new RestServer(
         nodeDummy,
